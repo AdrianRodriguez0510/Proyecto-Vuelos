@@ -7,5 +7,6 @@ import model.Hotel;
 public interface HotelesDao {
 	
 	public List<Hotel> devolverHoteles ();
+	
 
 }
