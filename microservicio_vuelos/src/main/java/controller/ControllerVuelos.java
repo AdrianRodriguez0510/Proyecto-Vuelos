@@ -16,8 +16,7 @@ import service.IServiceVuelos;
 @RestController
 public class ControllerVuelos {
 	
-	@Autowired
-	RestTemplate restTemplate;
+
 	@Autowired
 	IServiceVuelos servicio;
 	
@@ -32,9 +31,9 @@ public class ControllerVuelos {
 	
 	@PutMapping(value= "vuelos/{idvuelo}/{plazas}")
 	public void modificarVuelo(@PathVariable("idvuelo") int idvuelo, @PathVariable("plazas") int plazas) {
-		if(plazas >0 && idvuelo >0) {
+		
 			servicio.actualizarPlazas(idvuelo, plazas);
-		}
+		
 	}
 	
 }

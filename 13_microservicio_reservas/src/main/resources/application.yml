@@ -1,6 +1,7 @@
+# Nombre identificador del servicio
 spring:
   application:
-    name: servicio-vuelos
+    name: servicio-reservas
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hoteles?serverTimezone=UTC
@@ -12,7 +13,7 @@ spring:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 server: 
-  port: 9000
+  port: 10000
 # Config de el servidor  
 eureka: 
   client:

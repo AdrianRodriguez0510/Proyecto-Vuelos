@@ -17,7 +17,8 @@ public class ServiceHotelesImpl implements ServiceHoteles {
 	@Override
 	public List<Hotel> devolverHotelesDisponibles() {
 		List <Hotel> hoteles = dao.devolverHoteles();
-		return hoteles.stream().filter(t->t.getDisponible()==1).collect(Collectors.toList());
+		return hoteles;
+				//.stream().filter(t->t.getDisponible()==1).collect(Collectors.toList());
 	}
 
 }
